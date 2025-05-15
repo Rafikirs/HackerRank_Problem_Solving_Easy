@@ -1,5 +1,5 @@
-# *Exercise*: Beautiful Days at the Movies
-# **URL:** https://www.hackerrank.com/challenges/beautiful-days-at-the-movies/problem?isFullScreen=true 
+# Exercise: Beautiful Days at the Movies
+# URL: https://www.hackerrank.com/challenges/beautiful-days-at-the-movies/problem?isFullScreen=true 
 # Description: Count the number of beautiful days between two given days.
 
 def beautifulDays(i, j, k):
