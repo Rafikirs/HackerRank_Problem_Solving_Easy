@@ -1,0 +1,15 @@
+# Exercise: Sherlock and Squares
+# URL: https://www.hackerrank.com/challenges/sherlock-and-squares/problem?isFullScreen=true
+# Description: Count how many perfect squares lie within the inclusive range between two integers.
+
+import math
+
+def squares(a, b):
+    return math.floor(math.sqrt(b)) - math.ceil(math.sqrt(a)) + 1
+
+
+
+
+
+
+
