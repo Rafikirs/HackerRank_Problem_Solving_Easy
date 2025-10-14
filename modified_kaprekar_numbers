@@ -1,0 +1,29 @@
+# Exercise: Modified Kaprekar Numbers
+# URL: https://www.hackerrank.com/challenges/kaprekar-numbers/problem?isFullScreen=true
+# Description: Check if numbers are Kaprekar numbers
+
+def kaprekarNumbers(p, q):
+    results = []
+
+    for n in range(p, q + 1):
+        d = len(str(n))
+        sq = str(n ** 2)
+
+        right = int(sq[-d:]) if sq[-d:] else 0
+        left = int(sq[:-d]) if sq[:-d] else 0
+
+        if left + right == n:
+            results.append(str(n))
+
+    if results:
+        print(" ".join(results))
+    else:
+        print("INVALID RANGE")
+
+
+if __name__ == '__main__':
+    p = int(input().strip())
+
+    q = int(input().strip())
+
+    kaprekarNumbers(p, q)
